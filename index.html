@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,100;1,300;1,400;1,600;1,900&display=swap" rel="stylesheet">
+    <title>primer sitio con Bootstrap 5</title>
+ 
+</head>
+<body>
+  <header class="container-fluid  bg-primary d-flex justify-content-center">
+    <p class="text-light mb-0  p-2 fs-4">Contactanos (+54)-911-000-000-00</p>
+  </header>
+  <!--side bar--> 
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <span class="text-primary fs-4 fw-bold">Tu Auto importado.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarProducto" role="button" data-bs-toggle="producto" aria-expanded="">
+              Producto
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Cayenne Turbo GT</a></li>
+              <li><a class="dropdown-item" href="#">Lamborghini Urus</a></li>
+              <li><a class="dropdown-item" href="#">Maserati Levante S</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+          <button class="btn btn-primary btn-primary-outline-success" type="button">Suscribete</button>
+        </form>
+      </div>
+    </div>
+  </nav> 
+  <!--========================================================================================-->
+  <!--slider de imagenes-->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="./imagenes/slide1.jpg" class="d-block w-100" alt="slide1">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./imagenes/slide2.jpg" class="d-block w-100" alt="slide2">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./imagenes/slide3.jpg" class="d-block w-100" alt="slide3">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./imagenes/slide4.jpg" class="d-block w-100" alt="slide4">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./imagenes/slide5.jpg" class="d-block w-100" alt="slide5">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> 
+  <!--========================================================================================-->
+<!--Intro-->
+<section class="w-50 mx-auto text-center pt-5" id="intro">
+  <h1 class="p-3 fs-2 border-top border -3">Una agencia unica para todas tus necesidades. <span class="text-primary"> Tus Especialistas En Autos. </span></h1>
+  <p class="p-3 fs-4 "><span class="text-primary"> Tu Auto Importado. </span> Es la agencia de Automoviles que brinda proteccion y sastifaccion a sus clientes. </p>
+</section>
+<!--========================================================================================-->
+<!--Servicios-->
+<section class="container-fluid">
+  <div class="row w-75 mx-auto servicio-fila">
+    <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+      <img src="./imagenes/desarrollo2.jpg" alt="desarrollo" width="300" height="180">
+      <div>
+        <h3 class="fs-5 mt-4 px-4 pb-1"> Gentiona </h3>
+        <p class="px-4"> desde cualquier dispositivo. </p>
+      </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+      <img src="./imagenes/desarrollo3.jpg" alt="desarrollo" width="300" height="180">
+      <div>
+        <h3 class="fs-5 mt-4 px-4 pb-1"> Marketing Digital </h3>
+        <p class="px-4"> Siendo el vinculo para enlazar con otras fuentes. </p>
+      </div>
+    </div>
+</div>
+
+<div class="row w-75 mx-auto servicio-fila">
+
+  <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+    <img src="./imagenes/desarrollo1.jpg" alt="desarrollo" width="300" height="180">
+    <div>
+      <h3 class="fs-5 mt-4 px-4 pb-1"> Disfruta </h3>
+      <p class="px-4"> Realiza tus compra y ventas desde tu smarphone. </p>
+    </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+    <img src="./imagenes/desarrollo4.jpg" alt="desarrollo" width="300" height="180">
+    <div>
+      <h3 class="fs-5 mt-4 px-4 pb-1"> Tu Primer Auto </h3>
+      <p class="px-4"> Garantizamos la mejor plataforma para lograr tu sueño. </p>
+    </div>
+  </div>
+</div>
+</section>
+<!--========================================================================================-->
+  <!--Nosotros-->
+  <section>
+    <div class=" w-75 mx-auto text-center" id="equipo">
+      <h1 class="mb- 5 fs-2">Equipo pequeño<span class="text-primary"> Resultado grandes</span></h1>
+      <p class="fs-4 text-center"> Buscamos los mejores resultado a la hora de la busqueda de ese auto que tanto deseas. nustro portal garantiza las mejores ofertas del mercado y ponemos en tu mano una interfaz hecha para ti, pensada para que logres tu sueño. </p>
+    </div>
+    <div class="mt-5m text-center">
+      <img class="img-fluid" src="./imagenes/equipo.jpg" alt="equipo">
+    </div>
+    <div id="local" class="border-top border-2 ">
+      <div class="mapa"></div>
+      <div>
+        <div class="wrapper">
+           <h2> Ubicado en Buenos Aires-Argentina. Palermo</h2>
+           <h2 class="text-primary mb-4" id="typewrite"></h2>
+           <p class="fs-5 text-body ">
+             Elejimos Buenos Aires-Aregentina para nuestras oficinas con el objetivo de estas cerca de nuestro clientes. estamos ubicado en (palermo al 1800) el corazon de una de la mas reconocidas zonas del país cercano a restaurantes,tiendas. etc... visitanos no se arrepentira!
+           </p>
+           <section class="d-flex" id="numeros-local">
+            <div>
+              <p class="text-primary fs-5 ">248</p>
+              <p>Dias de sol</p>
+            </div>
+            <div>
+              <p class="text-primary fs-5 ">100%</p>
+              <p>Aprobado</p>
+            </div>
+            <div>
+              <p class="text-primary fs-5">22 C°</p>
+              <p> temperatura</p>
+            </div>
+           </section>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--========================================================================================-->
+  
+  <!--Pie de Pagina-->
+
+  <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+    <p class="fs-5 px-3 pt-3">ExpertD. &copy; Todos Los Derechos Reservados 2021
+    </p>
+    <div id="iconos">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+ <!--========================================================================================--> 
+  <!-- Option 1: Bootstrap Bundle with Popper profesor por alguna razon no me permitio dar el efecto que quise realizar podra hacerme el favor de corregirme para saber donde tengo la falla. gracias -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="main.js"></script>
+  
+</body>
+</html>

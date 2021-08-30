@@ -1,0 +1,181 @@
+/*Generales*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+/*Menu*/
+#menu li > a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f
+}
+#menu form > button {
+font-size: 18px;
+font-weight: bold;
+}
+/*Slide De Imagenes*/
+.carousel-inner{
+    max-height: 39rem;
+}
+/*seccion nuestro equipo mapa*/
+.mapa {
+    background: url(./imagenes/mapa1.png);
+    width: 100%;
+    height: 500px;
+}
+#local{
+    background: #f3f3f3;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px ;
+}
+/*seccion nuestro equipo Buenos Aires*/
+#numeros-local div {
+    padding: 0 20px 0 0;
+    height: 48px;
+} 
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+}
+#numeros-local div:not(:first-child){
+    padding-left: 20px;
+}
+#numeros-local p {
+     margin: 0;
+}
+/*=============== Contacto background===================*/
+#bg-contacto {
+position: relative;
+top: -130px;
+}
+#seccion-contacto {
+background-color: #1b2a4e;
+min-height: 500px;
+position: relative;
+}
+/*=============== Contacto Formulario===================*/
+#contenedor-formulario {
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #fbfafa;
+border-radius: 5px;
+max-width: 400px;
+}
+#titulo-formulario {
+    color: #3f3f3f
+}
+/*=============== Footer===================*/
+footer {
+    background: #1b2a4e;
+    min-height: 100px;
+}
+footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3
+}
+
+/*=============== Contacto Formulario===================*/
+/*Media Queries Pantalla Ancha*/
+@media (max-width:1200px){
+    #local{
+    flex-wrap: wrap;
+    padding-top: 30px;
+    }
+    .wrapper{
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+/*Media Queries Pantalla SM*/
+@media (max-width:768px) {
+   
+    #intro, #equipo {
+        width:90% !important;
+    }
+    #equipo p {
+        display: none;
+    }
+    .servicio-fila {
+            width: 100% !important;
+            text-align: center;
+    }
+    #bg-contacto {
+        top: -110px;
+        }
+}
+/*Media Queries Pantalla Extra-SM*/
+@media (max-width: 576px) {
+    .icono-wrap{
+    flex-wrap: wrap;
+    justify-content: center !important;
+    }
+   
+}
+/*estilo de la galeria grid*/
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+.gallery__item{
+    position: relative;
+}
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery__title{
+position: absolute;
+bottom: 0;
+color: blanchedalmond;
+background: linear-gradient(rgba(255,255,255,0.5),rgba(0,0,0,1));
+width: 100%;
+margin: 0;
+
+}
+.gallery__item:nth-child(7){
+    grid-row-start: span 6;
+}
+.gallery__item:nth-child(10){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.gallery__item:nth-child(8){
+    grid-row-start: span 3;
+}
+.gallery__item:nth-child(1){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.gallery__item:nth-child(4){
+    grid-row-start: span 3;
+}
+.gallery__item:nth-child(2){
+    grid-row-start: span 3;
+}
+.gallery__item:nth-child(1){
+    grid-column-start: span 3;
+    grid-row-start: span 3;
+}
+.gallery__item:nth-child(6){
+    grid-row-start: span 3;
+}
+.gallery__item:nth-child(5){
+    grid-row-start: span 3;
+}
