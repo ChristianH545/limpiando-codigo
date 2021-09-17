@@ -179,3 +179,43 @@ margin: 0;
 .gallery__item:nth-child(5){
     grid-row-start: span 3;
 }
+/*--------------estilo section Vehiculo--------------------*/
+
+.page__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+.product__container{
+    margin: 15px ;
+    padding: 2px 16px;
+    position: relative;
+}
+.product__container:hover {
+    box-shadow: 0 8px 16px 0 #0d6efd;
+  }
+.product__container img{
+
+    height: 250px;
+    width: 400px;
+    
+}
+.button-add {
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: #f3f3f3;
+    border: 2px solid #0d6efd;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    
+  }
+  
+  .button-add:hover {
+    background-color: #0d6efd; 
+    color: white;
+  }
